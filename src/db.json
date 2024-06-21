@@ -1,20 +1,28 @@
 {
   "submissions": [
     {
-      "id": 3,
-      "name": "joseph kc",
-      "email": "josephkc@gmail.com",
-      "phone": "4567891290",
-      "github_link": "github/josephkc",
+      "id": 1,
+      "name": "hajari",
+      "email": "haja",
+      "phone": "7412589630",
+      "github_link": "haja",
       "stopwatch_time": "00:00:03"
     },
     {
+      "id": 3,
+      "name": "mariyam",
+      "email": "mariya",
+      "phone": "789456122",
+      "github_link": "github",
+      "stopwatch_time": "00:00:02"
+    },
+    {
       "id": 4,
-      "name": "saviyo joseph",
-      "email": "saviyo@gmail.com",
-      "phone": "9874561230",
-      "github_link": "github/saviyo",
-      "stopwatch_time": "00:00:00"
+      "name": "sainn",
+      "email": "sain",
+      "phone": "7894561230",
+      "github_link": "sain",
+      "stopwatch_time": "00:00:02"
     }
   ]
 }

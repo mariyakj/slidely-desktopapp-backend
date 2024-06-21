@@ -41,13 +41,14 @@ app.get('/ping', (req: Request, res: Response) => {
 app.post('/submit', (req: Request, res: Response) => {
   try {
     const submissions = readDatabase();
+    const newId = submissions.length > 0 ? submissions[submissions.length - 1].id + 1 : 1;
     const newSubmission: Submission = {
-      id: submissions.length ? submissions[submissions.length - 1].id + 1 : 1,
+      id: newId,
       ...req.body
     };
     submissions.push(newSubmission);
     writeDatabase(submissions);
-    res.status(201).json({ success: true });
+    res.status(201).json({ success: true, id: newId }); // Return the new ID
   } catch (error) {
     console.error('Error submitting form:', error);
     res.status(500).json({ error: 'Failed to submit form' });
